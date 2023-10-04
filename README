@@ -1,0 +1,11 @@
+MediaWiki HTTP Basic Auth Session Provider
+
+This provider gets the username from HTTP Basic Authorization header.
+
+Tested with MediaWiki 1.39
+
+WARNING: This provider is insecure, it expects a higher-level HTTP server (Apache, Nginx, etc.) to verify the credentials.
+
+Installation:
+- Copy BasicAuthSessionProvider.php to $IP/includes/session/
+- Replace or update $wgSessionProviders configuration: https://www.mediawiki.org/wiki/Manual:$wgSessionProviders
